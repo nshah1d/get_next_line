@@ -6,7 +6,7 @@
 /*   By: nshahid <nshahid@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/03 13:15:16 by nshahid           #+#    #+#             */
-/*   Updated: 2023/09/08 17:56:37 by nshahid          ###   ########.fr       */
+/*   Updated: 2023/09/10 12:53:02 by nshahid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ char	*get_next_line(int fd)
 	return (read_content);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int		fd;
 	char	*line;
@@ -131,3 +131,4 @@ int	main(void)
 	close(fd);
 	return (0);
 }
+ */

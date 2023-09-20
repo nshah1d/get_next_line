@@ -6,7 +6,7 @@
 /*   By: nshahid <nshahid@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/03 17:07:29 by nshahid           #+#    #+#             */
-/*   Updated: 2023/09/10 13:42:23 by nshahid          ###   ########.fr       */
+/*   Updated: 2023/09/15 08:23:20 by nshahid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ static char	*read_line(char *str)
 	return (line);
 }
 
-static char	*free_and_null(char *buff1, char *buff2)
+static char	*free_null(char *buff1, char *buff2)
 {
 	free(buff1);
 	free(buff2);
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 		read_bytes = read(fd, read_content, BUFFER_SIZE);
 		if (read_bytes == -1)
 		{
-			*(read_buffer + fd) = free_and_null(read_content, *(read_buffer + fd));
+			*(read_buffer + fd) = free_null(read_content, *(read_buffer + fd));
 			return (NULL);
 		}
 		read_content[read_bytes] = '\0';

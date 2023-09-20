@@ -6,7 +6,7 @@
 /*   By: nshahid <nshahid@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/03 13:15:16 by nshahid           #+#    #+#             */
-/*   Updated: 2023/09/10 12:53:02 by nshahid          ###   ########.fr       */
+/*   Updated: 2023/09/15 08:22:27 by nshahid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,22 +113,3 @@ char	*get_next_line(int fd)
 	read_buffer = create_substring(read_buffer);
 	return (read_content);
 }
-
-/* int	main(void)
-{
-	int		fd;
-	char	*line;
-	int		i;
-
-	fd = open("sometxt.txt", O_RDONLY);
-	i = 1;
-	while ((line = get_next_line(fd)) != NULL)
-	{
-		printf("line %d: %s\n", i, line);
-		free(line);
-		i++;
-	}
-	close(fd);
-	return (0);
-}
- */
